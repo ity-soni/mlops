@@ -1,2 +1,8 @@
 /adult.data
 /adult.test
+/pipeline.pkl
+/processed_train_data.csv
+/processed_test_data.csv
+/pipeline1.pkl
+/processed_train_data1.csv
+/processed_test_data1.csv

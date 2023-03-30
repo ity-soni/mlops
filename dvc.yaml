@@ -1,0 +1,21 @@
+stages:
+  featurization:
+    cmd: python src/create_features.py
+    deps:
+    - data/adult.data
+    - data/adult.test
+    - src/create_features.py
+    outs:
+    - data/pipeline.pkl
+    - data/processed_test_data.csv
+    - data/processed_train_data.csv
+  featurization_w_params:
+    cmd: python src/create_features_w_params.py
+    deps:
+    - data/adult.data
+    - data/adult.test
+    - src/create_features.py
+    outs:
+    - data/pipeline1.pkl
+    - data/processed_test_data1.csv
+    - data/processed_train_data1.csv
